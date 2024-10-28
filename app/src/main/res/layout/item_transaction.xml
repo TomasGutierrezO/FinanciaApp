@@ -1,7 +1,6 @@
 <!-- item_transaction.xml -->
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardCornerRadius="8dp"
@@ -34,12 +33,7 @@
             android:layout_height="wrap_content"
             android:textSize="16sp"/>
 
-        <TextView
-            android:id="@+id/textViewTransactionDate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="16sp"
-            tools:ignore="DuplicateIds" />
+        <!-- Puedes agregar más TextViews para mostrar otros detalles de la transacción -->
 
     </LinearLayout>
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -12,16 +13,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="@string/transferir"
+        android:text="Transferir"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <Spinner
-        android:id="@+id/cuentaTSP"
+        android:id="@+id/cuentaDSP"
         android:layout_width="161dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_text_bg"
-        android:hint="@string/account"
+        android:hint="account"
         tools:ignore="MissingConstraints" />
     <Space
         android:layout_width="match_parent"
@@ -31,19 +32,17 @@
         android:layout_width="161dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_text_bg"
-        android:hint="@string/cuenta_que_recibe"
-        tools:ignore="MissingConstraints"
-        android:autofillHints=""
-        android:inputType="text" />
+        android:hint="cuenta que recibe"
+        tools:ignore="MissingConstraints" />
     <Space
         android:layout_width="match_parent"
         android:layout_height="12dp" />
     <Spinner
-        android:id="@+id/categoryTSP"
+        android:id="@+id/categoryDSP"
         android:layout_width="161dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_text_bg"
-        android:hint="@string/category"
+        android:hint="category"
         tools:ignore="MissingConstraints" />
     <Space
         android:layout_width="match_parent"
@@ -53,19 +52,17 @@
         android:layout_width="161dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_text_bg"
-        android:hint="@string/monto1"
+        android:hint="monto"
         android:minHeight="48dp"
-        tools:ignore="MissingConstraints"
-        android:autofillHints=""
-        android:inputType="number" />
+        tools:ignore="MissingConstraints" />
     <Space
         android:layout_width="match_parent"
         android:layout_height="12dp" />
     <Button
-        android:id="@+id/sendTransferBT"
+        android:id="@+id/sendDepositBT"
         android:layout_width="124dp"
         android:layout_height="wrap_content"
         android:background="@drawable/rounded_button"
-        android:text="@string/depositar" />
+        android:text="Depositar" />
 
 </LinearLayout>
