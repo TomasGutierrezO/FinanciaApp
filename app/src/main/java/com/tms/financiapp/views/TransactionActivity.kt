@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.FrameLayout
+import android.widget.ProgressBar
 import android.widget.Spinner
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -35,6 +36,7 @@ class TransactionActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_transaction)
+        val progressBarTransaction = findViewById<ProgressBar>(R.id.transactioprogressBar)
         enableEdgeToEdge()
 
         val buttons = listOf<Button>(
@@ -52,6 +54,7 @@ class TransactionActivity : AppCompatActivity() {
             button.isEnabled = false
             button.postDelayed({
                 button.isEnabled = true
+                progressBarTransaction.visibility = View.INVISIBLE
             }, 7000)
             button.setOnClickListener {
                 val layoutId = when (index) {
@@ -94,10 +97,11 @@ class TransactionActivity : AppCompatActivity() {
                     val withDrawalButtonSend = findViewById<Button>(R.id.withDrawalBT)
                     withDrawalButtonSend.setOnClickListener{
                         val userId = helper.getUserID()
-                        val spinnerAccountDeposit = findViewById<Spinner>(R.id.cuentaWSP)
-                        val spinnerCategoryDeposit = findViewById<Spinner>(R.id.categoryWSP)
+                        val spinnerAccountWithdrawal = findViewById<Spinner>(R.id.cuentaWSP)
+                        val spinnerCategoryWithdrawal = findViewById<Spinner>(R.id.categoryWSP)
                         val amount =  findViewById<EditText>(R.id.amountWET)
                         val date = helper.getCurrentDateString()
+                        val category = spinnerCategoryWithdrawal.selectedItem.toString()
                         val description = "Retiro"
 
                         val transaction = Transaction(
@@ -106,8 +110,8 @@ class TransactionActivity : AppCompatActivity() {
                             transactionType = currentTransactionType.code,
                             amount = amount.text.toString().toDouble(),
                             date = date,
-                            description = description,
-                            account = spinnerAccountDeposit.selectedItem.toString(),
+                            description = "$category $description",
+                            account = spinnerAccountWithdrawal.selectedItem.toString(),
                             toAccount = ""
                         )
                         transactionController.addTransaction(transaction)
