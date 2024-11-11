@@ -7,7 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".views.TransactionActivity">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -17,19 +16,19 @@
             android:id="@+id/button_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Income" />
+            android:text="@string/income" />
 
         <Button
             android:id="@+id/button_two"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Expense" />
+            android:text="@string/expense" />
 
         <Button
             android:id="@+id/button_three"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Transfer" />
+            android:text="@string/transferir" />
         <Space
             android:layout_width="match_parent"
             android:layout_height="15dp" />

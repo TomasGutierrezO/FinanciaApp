@@ -1,6 +1,7 @@
 *.iml
 .gradle
-build.gradle.kts
+.idea
+.github
 /local.properties
 /.idea/caches
 /.idea/libraries

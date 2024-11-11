@@ -19,9 +19,9 @@
             android:id="@+id/Titulo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#6C7FAF"
+            android:background="#ff6750a4"
             android:gravity="center"
-            android:text="FinanciApp"
+            android:text="@string/financiapp"
             android:textColor="#FFFFFF"
             android:textSize="50sp"
             android:textStyle="bold" />
@@ -53,7 +53,7 @@
                         android:id="@+id/account_balance_container"
                         android:layout_width="match_parent"
                         android:layout_height="225dp"
-                        android:background="#6C7FAF"
+                        android:background="#ff6750a4"
                         android:orientation="vertical"
                         android:padding="16dp">
 
@@ -127,7 +127,7 @@
                             android:layout_marginStart="24dp"
                             android:layout_marginBottom="20dp"
                             android:background="@drawable/rounded_button"
-                            android:text="Add transaction"
+                            android:text="@string/add_transaction"
                             android:textColor="@android:color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent" />
@@ -139,7 +139,7 @@
                             android:layout_marginEnd="24dp"
                             android:layout_marginBottom="20dp"
                             android:background="@drawable/rounded_button"
-                            android:text="Create account"
+                            android:text="@string/createAccount"
                             android:textColor="@android:color/white"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toEndOf="parent" />
@@ -181,7 +181,7 @@
             android:layout_marginStart="36dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/rounded_button"
-            android:text="View Charts"
+            android:text="@string/view_charts"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -194,7 +194,7 @@
             android:layout_marginEnd="36dp"
             android:layout_marginBottom="5dp"
             android:background="@drawable/rounded_button"
-            android:text="Edit profile"
+            android:text="@string/editprofile"
             android:textColor="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />

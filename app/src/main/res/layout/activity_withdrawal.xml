@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:text="Expense"
+        android:text="@string/expense"
         android:textSize="24sp"
         android:textStyle="bold" />
 
@@ -22,7 +22,7 @@
         android:layout_width="161dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_text_bg"
-        android:hint="account"
+        android:hint="@string/account"
         tools:ignore="MissingConstraints" />
     <Space
         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
         android:layout_width="161dp"
         android:layout_height="55dp"
         android:background="@drawable/edit_text_bg"
-        android:hint="category"
+        android:hint="@string/category"
         tools:ignore="MissingConstraints" />
     <Space
         android:layout_width="match_parent"
@@ -43,7 +43,7 @@
         android:background="@drawable/edit_text_bg"
         android:layout_width="161dp"
         android:layout_height="55dp"
-        android:hint="Amount"
+        android:hint="@string/amount"
         android:minHeight="48dp"
         tools:ignore="MissingConstraints" />
     <Space
@@ -54,6 +54,5 @@
         android:background="@drawable/rounded_button"
         android:layout_width="124dp"
         android:layout_height="wrap_content"
-        android:text="Save" />
-
+        android:text="@string/save" />
 </LinearLayout>

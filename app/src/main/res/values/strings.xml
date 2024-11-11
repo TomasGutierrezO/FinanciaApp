@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinanciApp</string>
+    <string name="financiapp">FinanciApp</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
@@ -13,7 +13,6 @@
     <string name="accountType">Account type:</string>
     <string name="createAccount">Create Account</string>
     <string name="sendCreateAccount">Create</string>
-    <string name="edit_profile">Edit</string>
     <string name="editprofile">Edit Profile</string>
     <string name="monto_inicial">Starting amount</string>
     <string name="transaction">Transaction</string>
@@ -69,4 +68,18 @@
     <string name="category">category</string>
     <string name="monto1">Amount</string>
     <string name="depositar">Save</string>
+    <string name="log_into_your_account">Log into your account</string>
+    <string name="sign_in_desc">Sign in to access your finance management or create an account to get started.</string>
+    <string name="final_date">Final date</string>
+    <string name="initial_date">Initial date</string>
+    <string name="generate_graph">Generate graph</string>
+    <string name="income">Income</string>
+    <string name="cuenta">Cuenta</string>
+    <string name="amount">Amount</string>
+    <string name="save">Save</string>
+    <string name="name">Name</string>
+    <string name="document_number">Document Number</string>
+    <string name="add_transaction">Add transaction</string>
+    <string name="view_charts">View Charts</string>
+    <string name="expense">Expense</string>
 </resources>
