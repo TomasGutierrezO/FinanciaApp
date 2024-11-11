@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/transferir"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/cuentaTSP"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/account"
+        tools:ignore="MissingConstraints" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+    <EditText
+        android:id="@+id/reciverCuentaT"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/cuenta_que_recibe"
+        tools:ignore="MissingConstraints"
+        android:autofillHints=""
+        android:inputType="text" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+    <Spinner
+        android:id="@+id/categoryTSP"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/category"
+        tools:ignore="MissingConstraints" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+    <EditText
+        android:id="@+id/amountDET"
+        android:layout_width="161dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/monto1"
+        android:minHeight="48dp"
+        tools:ignore="MissingConstraints"
+        android:autofillHints=""
+        android:inputType="number" />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+    <Button
+        android:id="@+id/sendTransferBT"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
+        android:text="@string/depositar" />
+
+</LinearLayout>

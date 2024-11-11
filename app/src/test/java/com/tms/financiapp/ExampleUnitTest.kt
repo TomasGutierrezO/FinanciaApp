@@ -1,4 +1,4 @@
-package com.example.finnanciapp
+package com.tms.financiapp
 
 import org.junit.Test
 
